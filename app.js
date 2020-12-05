@@ -8,6 +8,11 @@ function urlConstruct(text) {
     return serverUrl + "?" + "text=" + text
 }
 
+function errorHandler(error) {
+    console.log("error occured", error)
+    alert("Site is down try again after sometime")
+}
+
 function clickHandler() {
     var textInput = txtInput.value;
 
@@ -17,7 +22,7 @@ function clickHandler() {
             var textTranslated = json.contents.translated;
             txtOutput.innerHTML = textTranslated
         })
-
+        .catch(errorHandler)
 }
 
 btnTranslate.addEventListener("click", clickHandler);
