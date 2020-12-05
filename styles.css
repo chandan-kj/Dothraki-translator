@@ -1,12 +1,12 @@
-#output-box{
+#txt-input {
     width: 400px;
     padding: 10px;
-    border: 1px solid black;
     height: 10vh;
 }
 
-#txt-input{
+#output-box {
     width: 400px;
     padding: 10px;
+    border: 1px solid black;
     height: 10vh;
 }
